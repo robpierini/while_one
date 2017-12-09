@@ -324,7 +324,7 @@ string Pushdown_Automaton::perform_transition(Instantaneous_Description instanta
         }    
             ////////
         
-        if(number_of_transitions_performed==configuration_settings->get_maximum_transitions()){
+        if(number_of_transitions_performed>=configuration_settings->get_maximum_transitions()){
            
             if(!configuration_settings->get_complete_paths()){
                     print_id(next_id);
